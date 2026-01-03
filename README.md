@@ -65,6 +65,25 @@ http://localhost:8080
 (or another port depending on Vite configuration)
 
 ---
+## 🤖 AI Chatbot Integration
+
+The conversational AI chatbot used in this application is implemented as a separate service.
+
+🔗 **Chatbot Backend Repository**:  
+https://github.com/youssefmaimouni/can2025_chat.git
+
+### Chatbot Features
+- Retrieval-Augmented Generation (RAG) using AFCON historical and 2025 data
+- Natural language question answering about:
+  - AFCON 2025 tournament
+  - Teams, squads, and coaches
+  - Stadiums and referees
+  - Historical AFCON match statistics
+- SQL-based statistical queries combined with semantic search
+
+### API Communication
+The frontend communicates with the chatbot via the following endpoint:
+
 
 ## 🔗 Backend API Connection
 
