@@ -1,73 +1,110 @@
-# Welcome to your Lovable project
+# AFCON 2025 AI Assistant – Frontend
 
-## Project info
+## 📌 Overview
+This is the **frontend application** of the **AFCON 2025 AI Assistant**, developed using **React**.  
+It provides users with:
+- A **statistics dashboard** for the AFCON tournament
+- An **interactive AI chatbot interface** to ask questions in natural language
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The frontend communicates with a Flask backend via REST APIs.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🎯 Features
+- 📊 Display of AFCON tournament statistics
+- 🤖 Chatbot interface powered by an AI backend
+- ⚡ Fast and responsive user interface
+- 🌐 Real-time communication with backend API
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Technologies Used
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Fetch API / Axios
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 📂 Project Structure
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+src/
+│── components/        # Reusable UI components
+│── pages/             # Pages (Statistics, Chatbot)
+│── services/          # API communication logic
+│── App.js             # Main application component
+│── main.jsx / index.js
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+````
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ▶️ Installation
+Make sure you have **Node.js** installed.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+npm install
+````
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## ▶️ Run the Application
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will run on:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:8080
+```
 
-**Use GitHub Codespaces**
+(or another port depending on Vite configuration)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🔗 Backend API Connection
 
-This project is built with:
+Ensure the backend server is running.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Default backend URL:
 
-## How can I deploy this project?
+```
+http://127.0.0.1:5000
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Chatbot endpoint used by the frontend:
 
-## Can I connect a custom domain to my Lovable project?
+```
+POST /api/ask
+```
 
-Yes, you can!
+Example request body:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```json
+{
+  "question": "Who won AFCON 2019?"
+}
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 🚀 Future Enhancements
+
+* Advanced data visualizations (charts)
+* Multilingual interface (Arabic / French / English)
+* Authentication and user profiles
+* Improved UI/UX design
+
+---
+
+## 👤 Author
+
+**Youssef Maimouni**
+
+## 📅 Year
+
+2026
